@@ -67,7 +67,7 @@ const Home = () => {
           </motion.button>
         </motion.div>
       </Main>
-      <section className='bg-img'>
+      <section className=''>
         <div className='container flex mx-auto lg:flex-row flex-col justify-between'>
         <motion.div  initial={{ opacity: 0, x: '-100vw' }}
           animate={{ opacity: 1, x: 0 }}
