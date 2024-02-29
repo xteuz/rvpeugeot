@@ -39,7 +39,7 @@ const Home = () => {
               <span className='text-slate-100'>IPHONE 15</span> OU <span className='text-slate-100'>R$5000 NO PIX</span>
             </p>
           </h2>
-          <div className='text-slate-50 text-center p-1 sm:p-3 rounded-2xl mt-5 bg-red-600 font-bold text-xl'>
+          <div className='text-slate-50 text-center mx-2 p-1 sm:p-3 rounded-2xl mt-5 bg-red-600 font-bold text-xl'>
             RESULTADO PELA LOTERIA FEDERAL
           </div>
           <ul className='mt-5'>
@@ -52,7 +52,7 @@ const Home = () => {
             </li>
           </ul>
           <motion.button
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
             className='mt-4 min-[480px]:mt-14 justify-center flex bg-gradient-to-r w-[300px] mx-auto hover:bg-transparent from-green-500 via-green-600 to-green-700 rounded-3xl px-6 py-3'
           >
@@ -67,23 +67,20 @@ const Home = () => {
           </motion.button>
         </motion.div>
       </Main>
-      <section className=''>
-        <div className='container flex mx-auto lg:flex-row flex-col justify-between'>
-        <motion.div  initial={{ opacity: 0, x: '-100vw' }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }} className='max-w-[630px] lg:mx-0 mx-auto '>
-  <h2 className='text-center  font-sans font-extrabold text-green-600 text-4xl  mt-16 min-[348px]:mt-5'>BILHETES PREMIADOS</h2>
-  <p className='text-center lg:mb-0 my-3  font-sans font-semibold text-black'>COTAS PREMIADAS TODA SEMANA</p>
-</motion.div>
-
-       
-        <div className='mt-5 pb-3'>
-          <h2 className='font-extrabold font-sans text-green-600 text-3xl text-center'>AINDA NÃO ADQUIRIU O SEU BILHETE ?</h2>
-          <FaArrowDown size={40} className='text-green-600 mx-auto mt-5'/>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
+      <section className='bg-slate-950'>
+        <div className='container flex py-10 mx-auto justify-center'>
+          <motion.div  
+            initial={{ opacity: 0, x: '-100vw' }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }} 
+            className='max-w-[630px] lg:mx-0 mx-auto '
+          >
+            <h2 className='text-center  font-sans font-extrabold text-slate-50 text-4xl  mt-16 min-[348px]:mt-5'>BILHETES PREMIADOS</h2>
+            <p className='text-center lg:mb-0 my-3  font-sans  text-slate-200 font-normal'>TEMOS SORTEIO DE BILHETES PREMIADOS TODA SEMANA!</p>
+            <motion.button
+            whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
-            className='mt-6 justify-center flex bg-gradient-to-r w-[300px] mx-auto hover:bg-transparent from-green-500 via-green-600 to-green-700 rounded-3xl px-6 py-4'
+            className='my-2 min-[480px]:mt-14 justify-center flex bg-gradient-to-r w-[300px] mx-auto hover:bg-transparent from-green-500 via-green-600 to-green-700 rounded-3xl px-6 py-3'
           >
             <Link
               className='flex justify-center text-center items-center font-sans text-xl gap-1 font-semibold text-slate-50'
@@ -94,7 +91,8 @@ const Home = () => {
               ENTRAR NO GRUPO
             </Link>
           </motion.button>
-        </div>
+          </motion.div>
+        
         </div>
       </section>
       <Footer>
