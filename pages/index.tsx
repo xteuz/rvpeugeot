@@ -75,7 +75,7 @@ const Home = () => {
             transition={{ duration: 1 }} 
             className='max-w-[630px] lg:mx-0 mx-auto '
           >
-            <h2 className='text-center  font-sans font-extrabold text-slate-50 text-4xl  mt-16 min-[348px]:mt-5'>BILHETES PREMIADOS</h2>
+            <h2 className='text-center mx-1 font-sans font-extrabold text-slate-50 text-4xl  mt-16 min-[348px]:mt-5'>BILHETES PREMIADOS</h2>
             <p className='text-center lg:mb-0 my-3  font-sans  text-slate-200 font-normal'>TEMOS SORTEIO DE BILHETES PREMIADOS TODA SEMANA!</p>
             <motion.button
             whileHover={{ scale: 1.3 }}
