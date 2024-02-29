@@ -67,7 +67,7 @@ const Home = () => {
           </motion.button>
         </motion.div>
       </Main>
-      <section className='bg-slate-950'>
+      <section className='bg-black'>
         <div className='container flex py-10 mx-auto justify-center'>
           <motion.div  
             initial={{ opacity: 0, x: '-100vw' }}
