@@ -2,32 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.fixeddd {
+    background: url('https://cdn.discordapp.com/attachments/698248067127836712/1212616723526717512/Inserir_um_titulo_7.png?ex=65f27c54&is=65e00754&hm=0334356a66dec79cf5503d18db88395839923b8048b1844c4041d04488e57508&');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 900px) {
+    .fixeddd {
+background: url('https://cdn.discordapp.com/attachments/698248067127836712/1212613440405901312/Inserir_um_titulo_Story_7.png?ex=65f27945&is=65e00445&hm=2797c27417af86dd1aca9585b6fe5f293c375d5424df231231f08b52f623e79d&');        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.bg-img {
+    background: url('https://cdn.discordapp.com/attachments/698248067127836712/1212844355941834782/Inserir_um_titulo_Story_9.png?ex=65f35054&is=65e0db54&hm=985e1a2d4508251c4e06001d54461627e9b14d72ad54990fa24a8efd91d3afb1&');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
