@@ -16,7 +16,7 @@ const Home = () => {
           <div>
             <Image width={250} src={Logo} alt='logoPng'/>
           </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex items-center gap-2 mx-3'>
             <Link href='https://www.instagram.com/rvdopeugeot/'>
               <FaInstagram className='hover:text-gray-400 text-white' size={30} />
             </Link>
@@ -33,12 +33,12 @@ const Home = () => {
           transition={{ duration: 1 }}
           className=' w-full min-[480px]:w-[480px] h-full flex justify-center p-3 flex-col text-left mt-10'
         >
-          <h2 className='font-display w-full sm:w-[500px] text-center sm:text-left rounded-xl bg-gradient-to-tr p-1 font-extrabold text-white text-4xl'>
-            PARTICIPE DO GRUPO!
-            <p className='font-normal text-xl text-center mt-2 text-slate-100'>
-              <span className='text-slate-100'>IPHONE 15</span> OU <span className='text-slate-100'>R$5000 NO PIX</span>
-            </p>
+          <h2 className='font-display lg:mx-0 mx-3 w-full sm:w-[500px] text-center sm:text-left rounded-xl bg-gradient-to-tr p-1 font-bold text-slate-200 text-4xl'>
+            <span className='text-slate-50 font-extrabold'>IPHONE 15</span> OU <span className='font-extrabold text-slate-50'>R$5000</span>
           </h2>
+            <p className='font-normal text-xl text-center mt-2 text-slate-100'>
+              <span className='text-slate-100'>PARTICIPE JÁ DO GRUPO</span>
+            </p>
           <div className='text-slate-50 text-center mx-2 p-1 sm:p-3 rounded-2xl mt-5 bg-red-600 font-bold text-xl'>
             RESULTADO PELA LOTERIA FEDERAL
           </div>
@@ -96,9 +96,7 @@ const Home = () => {
         </div>
       </section>
       <Footer>
-        <div className='p-5'>
-          <Image width={250} src={Logo} alt='logoPng'/>
-        </div>
+       
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -112,7 +110,7 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className='text-slate-100 text-center pb-5 font-sans font-semibold text-lg'
+          className='text-slate-100 mx-3 text-center pb-5 font-sans font-semibold text-lg'
         >
           © Copyright 2024, Todos os direitos Reservados por rvdopeugeot
         </motion.p>
