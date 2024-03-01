@@ -14,7 +14,7 @@ const Home = () => {
       <Header>
         <div className='container flex justify-between mx-auto'>
           <div>
-            <Image width={250} src={Logo} alt='logoPng'/>
+            <Image width={220} src={Logo} alt='logoPng'/>
           </div>
           <div className='flex items-center gap-2 mx-3'>
             <Link href='https://www.instagram.com/rvdopeugeot/'>
